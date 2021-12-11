@@ -18,6 +18,8 @@ public class Page_Object_Manager {
 	private Checkout_3 pc3;
 	private Checkout_4 pc4;
 	private Checkout_5 pc5;
+	private Checkout_11 pc11;
+
 	
 public Page_Object_Manager (WebDriver driver2) {
 		
@@ -96,6 +98,7 @@ public Checkout_2 getInstancepc2() {
 	}
 	return pc2;
 }
+
 public Checkout_3 getInstancepc3() {
 	if(pc3==null) {
 		pc3=new Checkout_3(driver);
@@ -117,5 +120,13 @@ public Checkout_5 getInstancepc5() {
 
 	}
 	return pc5;
+}
+
+public Checkout_11 getInstancepc11() {
+	if(pc11==null) {
+		pc11=new Checkout_11(driver);
+
+	}
+	return pc11;
 }
 }
